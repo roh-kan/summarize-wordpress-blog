@@ -17,7 +17,7 @@
 {% for pair in pairs %}
 
 <div class="container-article">
-    <a href="{{ pair["link"] }}">{{ pair["title"] }}</a>
+    <a target="_blank" href="{{ pair["link"] }}" >{{ pair["title"] }}</a>
     <p>{{ pair["summary"] }}</p>
 </div>
 {% endfor %}

@@ -7,4 +7,4 @@ The idea came out of necessity when I was reading a blog and I wanted to explore
 This app provides 2 input fields one for url of the blog and second for the number of pages you want to retrieve.
 
 Working version of this app is hosted
-[here](https://summarize-wordpress-blog.herokuapp.com/)
+<a href="https://summarize-wordpress-blog.herokuapp.com/" target="_blank">here</a>
