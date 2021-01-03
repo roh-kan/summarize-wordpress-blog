@@ -1,0 +1,31 @@
+.header {
+  color: #0d6efd;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.container-head {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 3em;
+}
+.container-article {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+/* media queries */
+@media screen and (min-width: 992px) {
+  .container-head {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-article {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

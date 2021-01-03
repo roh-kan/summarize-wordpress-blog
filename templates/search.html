@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+<div class="container-head">
+
+    <h2 class="header"> {{the_title}} </h2>
+
+    {{ wtf.quick_form(form) }}
+
+</div>
+{% if pairs is none %}
+<div class="container-head alert alert-warning">
+    Please enter the correct url or try with a different url
+</div>
+{% else %}
+{% for pair in pairs %}
+
+<div class="container-article">
+    <a href="{{ pair["link"] }}">{{ pair["title"] }}</a>
+    <p>{{ pair["summary"] }}</p>
+</div>
+{% endfor %}
+
+{% endif %}
+
+
+{% endblock %}
