@@ -13,11 +13,15 @@
 <div class="container-head alert alert-warning">
     Please enter the correct url or try with a different url
 </div>
+{% elif pairs is defined and pairs|length == 0 %}
+<div class="container-head alert alert-warning">
+    Unable to parse content of this url. Please try with a different url
+</div>
 {% else %}
 {% for pair in pairs %}
 
 <div class="container-article">
-    <a target="_blank" href="{{ pair["link"] }}" >{{ pair["title"] }}</a>
+    <a target="_blank" href="{{ pair["link"] }}">{{ pair["title"] }}</a>
     <p>{{ pair["summary"] }}</p>
 </div>
 {% endfor %}
