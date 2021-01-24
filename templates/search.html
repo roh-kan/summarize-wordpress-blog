@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% import "bootstrap/wtf.html" as wtf %}
 
 {% block content %}
@@ -18,6 +18,13 @@
     Unable to parse content of this url. Please try with a different url
 </div>
 {% else %}
+{% if query_url is defined %}
+<div class="container-head alert alert-info">
+    URL for your query: 
+    <a target="_blank" href="{{ query_url }}">{{ query_url }}</a>
+</div>
+{% endif %}
+
 {% for pair in pairs %}
 
 <div class="container-article">
